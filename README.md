@@ -7,11 +7,11 @@ Stack: jenkins, docker, sonarqube
 
 ###  1.安装docker
 
-**Mac**
-待补充
+- **Mac**
+[install on mac](https://docs.docker.com/v17.12/docker-for-mac/install/#download-docker-for-mac)
 
-**Windows**
-待补充
+- **Windows**
+[install on windows](https://docs.docker.com/docker-for-windows/install/)
 
 
 获取镜像到本地：
@@ -83,7 +83,6 @@ sonar  页面安装插件
 
 doc ref: https://github.com/ValaxyTech/DevOpsDemos/blob/master/SonarQube/Sonar_Integration_with_Jenkins.MD
 https://www.youtube.com/watch?v=k-3krTRuAFA
-
 
 ### 新建jenkins job
 "jenkins" --> "New Item"  
