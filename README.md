@@ -49,7 +49,7 @@ jenkins/jenkins:2.184
 jenkins容器中安装docker环境，为后续构建镜像和做准备，将以下命令在jenkins 容器中运行
 
 ```bash
-chmod 755 /var/run/docker.sock
+chmod 777 /var/run/docker.sock
 apt-get update && \
 apt-get -y install apt-transport-https \
      ca-certificates \
