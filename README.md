@@ -1,7 +1,15 @@
+<h4 style="color: red;">简易搭建demo, 不要随便用于生产环境</h4>
+
 # QA-community-201909
 For thoughtworks(wuhan) QA-community-201909
 
-Stack: jenkins, docker, sonarqube
+**Stack**: jenkins, docker, sonarqube
+
+**Todo List**
+
+- [ ] 画图，列表
+- [ ] grafana
+
 
 目的： 利用 docker 本地搭建CI/CD 环境，并执行 单元测试，集成测试，代码扫描等步骤，最后部署在本地
 
@@ -75,18 +83,11 @@ apt-get -y install docker-ce
 
 In the window above, please click the Login button to login to the administrator account of SonarQube with “admin” username and password is also “admin”.
 
-##### install sonar scanner
-https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
-
-
-sonar  页面安装插件
-
-doc ref: https://github.com/ValaxyTech/DevOpsDemos/blob/master/SonarQube/Sonar_Integration_with_Jenkins.MD
-https://www.youtube.com/watch?v=k-3krTRuAFA
-
-### 新建jenkins job
+### 4.新建jenkins job,并运行
 "jenkins" --> "New Item"  
 
 ![](images/jenkins_setup_03.png)
+
+![](images/jenkins_setup_04.png)
 
 ![](images/browser_screenshot_1.png)
