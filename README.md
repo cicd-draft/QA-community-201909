@@ -111,7 +111,11 @@ In the window above, please click the Login button to login to the administrator
 
 <img alt="xxx" src="images/jenkins_setup_04.png" valigin="middle" height="400"/>
 
+<<<<<<< HEAD
 <img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="200"/>
+=======
+<img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="250"/>
+>>>>>>> 468d068bf6bd61e97cbd0f5d23abf574570aebe9
 
 ![](images/sonarqube_01.png)
 
