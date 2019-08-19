@@ -109,17 +109,13 @@ In the window above, please click the Login button to login to the administrator
 ##### 4.3 Pipeline as code ,新建 pipeline 类型job  
 "jenkins" --> "New Item"  
 
-![](images/jenkins_setup_03.png)
+<img alt="xxx" src="images/jenkins_setup_04.png" valigin="middle" height="400"/>
 
-
-<img alt="xxx" src="images/jenkins_setup_03.png" valigin="middle" height="150"/>
-
-![](images/jenkins_setup_04.png)
-
-![](images/browser_screenshot_1.png)
+<img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="250"/>
 
 ![](images/sonarqube_01.png)
 
-
+---
 what's more:
 https://github.com/qinrui777/sonarqube-metric-to-grafana
+<img alt="xxx" src="images/grafana_01.png" valigin="middle" height="200"/>
