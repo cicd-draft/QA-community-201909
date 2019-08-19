@@ -9,6 +9,7 @@ For thoughtworks(wuhan) QA-community-201909
 
 - [ ] 画图，列表
 - [ ] grafana
+- [ ] build monitor 可视化
 
 
 目的： 利用 docker 本地搭建CI/CD 环境，并执行 单元测试，集成测试，代码扫描等步骤，最后部署在本地
@@ -91,3 +92,5 @@ In the window above, please click the Login button to login to the administrator
 ![](images/jenkins_setup_04.png)
 
 ![](images/browser_screenshot_1.png)
+
+![](images/sonarqube_01.png)
