@@ -118,6 +118,10 @@ In the window above, please click the Login button to login to the administrator
 ---
 what's more:
 https://github.com/qinrui777/sonarqube-metric-to-grafana
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="images/sonar_to_grafana.png"  width="400" height="260" ></div>
 
-<div style="float:right;border:solid 1px 000;margin:2px;"><img src="images/jenkins_to_grafana.png" width="400" height="260" ></div>
+
+
+<figure class="half">
+    <img src="images/jenkins_to_grafana.png" width="380" height="220" >
+    <img src="images/jenkins_to_grafana.png" width="380" height="220" >
+</figure>
