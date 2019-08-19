@@ -120,4 +120,4 @@ what's more:
 https://github.com/qinrui777/sonarqube-metric-to-grafana
 
 
-<img src="images/jenkins_to_grafana.png" width="380" height="220" ><img src="images/jenkins_to_grafana.png" width="380" height="220" >
+<img src="images/jenkins_to_grafana.png" width="380" height="220" > <img src="images/jenkins_to_grafana.png" width="380" height="220" >
