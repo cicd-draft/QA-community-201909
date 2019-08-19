@@ -5,6 +5,9 @@ For thoughtworks(wuhan) QA-community-201909
 
 **Stack**: jenkins, docker, sonarqube
 
+![](images/arch_01.png)
+
+
 **Todo List**
 
 - [ ] 画图，列表
@@ -116,7 +119,6 @@ In the window above, please click the Login button to login to the administrator
 ![](images/browser_screenshot_1.png)
 
 ![](images/sonarqube_01.png)
-
 
 
 what's more:
