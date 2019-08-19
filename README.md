@@ -51,7 +51,7 @@ jenkins/jenkins:2.184
 ```
 > **wait: 5s**
 
-![](images/jenkins_setup_02.png)
+<img alt="xxx" src="images/jenkins_setup_02.png" valigin="middle" height="200"/>
 
 设置Jenkins，用root用户进入容器，以便后续安装
 `docker exec -it -u root tw-jenkins bash` 
@@ -111,7 +111,7 @@ In the window above, please click the Login button to login to the administrator
 
 <img alt="xxx" src="images/jenkins_setup_04.png" valigin="middle" height="400"/>
 
-<img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="250"/>
+<img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="200"/>
 
 ![](images/sonarqube_01.png)
 
