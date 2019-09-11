@@ -1,9 +1,9 @@
-<h4 style="color: red;">简易搭建demo, 不要随便用于生产环境</h4>
+<h4 style="color: red;">Only for non-production environment</h4>
 
 # QA-community-201909
 For thoughtworks(wuhan) QA-community-201909
 
-**Stack**: jenkins, docker, sonarqube
+**Stack**: git, jenkins, docker, sonarqube
 
 ![](images/arch_01.png)
 
@@ -42,6 +42,7 @@ docker images
 ### 2.安装 jenkins
 
 启动Jenkins
+>Start the container with mounted docker daemon
 ```bash
 docker run -d  --name tw-jenkins \
 -p 8080:8080 \
@@ -50,6 +51,13 @@ docker run -d  --name tw-jenkins \
 jenkins/jenkins:2.184
 ```
 > **wait: 5s**
+
+```bash
+docker run --name tw-jcasc -d    \
+-p 8081:8080   \
+-v /var/run/docker.sock:/var/run/docker.sock \
+cicddraft/jenkins:v0.4
+```
 
 <img alt="xxx" src="images/jenkins_setup_02.png" valigin="middle" height="200"/>
 
