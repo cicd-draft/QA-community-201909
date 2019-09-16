@@ -49,7 +49,7 @@ or
 
 > **wait: 5s**
 
-浏览器中访问： localhost:8081 进入jenkins页面
+浏览器中访问：http://localhost:8081 进入jenkins页面
 
 ### 3.安装 sonarqube
 
@@ -61,7 +61,7 @@ or
 
 > **wait 5s**
 
-浏览器中访问： localhost:9000 进入 sonarqube 页面
+浏览器中访问： http://localhost:9000  进入 sonarqube 页面
 
 In the window above, please click the Login button to login to the administrator account of SonarQube with “admin” username and password is also “admin”.
 
