@@ -42,6 +42,11 @@ docker run --name tw-jcasc -d    \
 -v /var/run/docker.sock:/var/run/docker.sock \
 cicddraft/jenkins:v0.4
 ```
+
+or
+
+`docker run --name tw-jcasc -d    -p 8081:8080  -v /var/run/docker.sock:/var/run/docker.sock cicddraft/jenkins:v0.4`
+
 > **wait: 5s**
 
 浏览器中访问： localhost:8081 进入jenkins页面
