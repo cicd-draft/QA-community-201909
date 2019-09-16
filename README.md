@@ -78,7 +78,7 @@ springBoot 代码仓库:
 
 4. 选择 **"流水线(pipeline)"**
 
-5. Source Code Management 选择 "Git"，并补充以下信息：
+5. Source Code Management 选择 **"Git"**，并补充以下信息：
 
 |    key | value   | 
 |--------|-----------    | 
@@ -91,13 +91,10 @@ springBoot 代码仓库:
 
 
 访问部署好的服务：
-<img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="200"/>
-
-![](images/sonarqube_01.png)
+http://localhost:8888/api/increase?number=329
 
 ---
 what's more:
-https://github.com/qinrui777/sonarqube-metric-to-grafana
-
+- https://github.com/qinrui777/sonarqube-metric-to-grafana
 
 <img src="images/sonar_to_grafana.png" width="380" height="220" >      <img src="images/jenkins_to_grafana.png" width="380" height="220" >
