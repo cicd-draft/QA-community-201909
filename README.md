@@ -56,6 +56,8 @@ cicddraft/jenkins:v0.4
 
 > **wait 5s**
 
+浏览器中访问： localhost:9000 进入 sonarqube 页面
+
 In the window above, please click the Login button to login to the administrator account of SonarQube with “admin” username and password is also “admin”.
 
 ### 4.新建jenkins job,并运行
