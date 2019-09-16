@@ -30,7 +30,7 @@ For thoughtworks(wuhan) QA-community-201909
 获取镜像到本地：
 ```bash
 docker pull sonarqube:7.8-community
-docker pull jenkins/jenkins:2.184
+docker pull cicddraft/jenkins:v0.4
 ```
 
 如有网络原因，可采取导入本地镜像包
@@ -44,52 +44,12 @@ docker images
 启动Jenkins
 >Start the container with mounted docker daemon
 ```bash
-docker run -d  --name tw-jenkins \
--p 8080:8080 \
--v /var/run/docker.sock:/var/run/docker.sock \
--v $PWD/jenkins:/var/jenkins_home \
-jenkins/jenkins:2.184
-```
-> **wait: 5s**
-
-```bash
 docker run --name tw-jcasc -d    \
 -p 8081:8080   \
 -v /var/run/docker.sock:/var/run/docker.sock \
 cicddraft/jenkins:v0.4
 ```
-
-<img alt="xxx" src="images/jenkins_setup_02.png" valigin="middle" height="200"/>
-
-设置Jenkins，用root用户进入容器，以便后续安装
-`docker exec -it -u root tw-jenkins bash` 
-
-在jenkins 容器中安装docker环境，为后续构建镜像和做准备，将以下命令在jenkins 容器中运行
-
-```bash
-chmod 777 /var/run/docker.sock
-apt-get update && \
-apt-get -y install apt-transport-https \
-     ca-certificates \
-     curl \
-     gnupg2 \
-     software-properties-common && \
-curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg > /tmp/dkey; apt-key add /tmp/dkey && \
-add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
-   $(lsb_release -cs) \
-   stable" && \
-apt-get update && \
-apt-get -y install docker-ce
-```
-> **wait: 5min**，可同时进行其他事项
-
-配置jenkins  安装插件
-- pipeline
-- gitlab
-- Build Monitor View
-
-> **wait: 5min**
+> **wait: 5s**
 
 ### 3.安装 sonarqube
 
