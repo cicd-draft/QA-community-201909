@@ -65,22 +65,32 @@ or
 
 In the window above, please click the Login button to login to the administrator account of SonarQube with “admin” username and password is also “admin”.
 
-### 4.新建jenkins job,并运行
+### 4.新建jenkins pipeline job,并运行
 
-##### 4.1 本地运行
+springBoot 代码仓库:
+- https://github.com/lewisice/api-test-demo 
 
-`git clone  https://github.com/lewisice/api-test-demo`
+1. 登陆 localhost:8081
 
-见 https://github.com/lewisice/api-test-demo
+2. 点击 **"jenkins"** --> **"New Item"** 
 
-##### 4.2 新建一个 Freestyle 类型的job
+3. 输入名称： "pipeline-demo1   (可自定义想要的名称)
 
+4. 选择 **"流水线(pipeline)"**
 
-##### 4.3 Pipeline as code ,新建 pipeline 类型job  
-"jenkins" --> "New Item"  
+5. Source Code Management 选择 "Git"，并补充以下信息：
+
+|    key | value   | 
+|--------|-----------    | 
+|Repository URL | `https://github.com/lewisice/api-test-demo` | 
+|Branch Specifier | `*/cicd` | 
+
+6. 点击 **"Save"** 保存
 
 <img alt="xxx" src="images/jenkins_setup_04.png" valigin="middle" height="400"/>
 
+
+访问部署好的服务：
 <img alt="xxx" src="images/browser_screenshot_1.png" valigin="middle" height="200"/>
 
 ![](images/sonarqube_01.png)
