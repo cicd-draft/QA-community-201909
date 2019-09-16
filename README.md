@@ -44,6 +44,8 @@ cicddraft/jenkins:v0.4
 ```
 > **wait: 5s**
 
+浏览器中访问： localhost:8081 进入jenkins页面
+
 ### 3.安装 sonarqube
 
 >ref: https://docs.docker.com/samples/library/sonarqube/
