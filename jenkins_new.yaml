@@ -1,0 +1,28 @@
+jenkins:
+  systemMessage: "AutomatingGuy demo: configured automatically with JCasC plugin\n\n"
+
+  numExecutors: 3
+  mode: NORMAL
+
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+
+jobs:
+  - script: >
+        pipelineJob('demo_by_jcasc') {
+          definition {
+              cpsScm {
+                  scriptPath 'Jenkinsfile_mock'
+                  scm {
+                    git {
+                        remote { url 'https://github.com/lewisice/api-test-demo.git' }
+                        branch '*/cicd'
+                        extensions {}
+                    }
+                  }
+              }
+          }
+        }
