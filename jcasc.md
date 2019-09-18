@@ -20,7 +20,7 @@ jobs:
         pipelineJob('demo_by_jcasc') {
           definition {
               cpsScm {
-                  scriptPath 'Jenkinsfile'
+                  scriptPath 'Jenkinsfile_mock'
                   scm {
                     git {
                         remote { url 'https://github.com/lewisice/api-test-demo.git' }
