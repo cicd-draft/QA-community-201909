@@ -34,22 +34,37 @@ docker images
 
 ### 2.安装 jenkins
 
-启动Jenkins
->Start the container with mounted docker daemon
+启动Jenkins (Start the container with mounted docker daemon)
+
+`docker run --name tw-jenkins -d  -p 8081:8080  -v /var/run/docker.sock:/var/run/docker.sock cicddraft/jenkins:v0.4`
+
+>or 
 ```bash
-docker run --name tw-jcasc -d    \
+docker run --name tw-jenkins -d    \
 -p 8081:8080   \
 -v /var/run/docker.sock:/var/run/docker.sock \
 cicddraft/jenkins:v0.4
 ```
 
-or
-
-`docker run --name tw-jcasc -d    -p 8081:8080  -v /var/run/docker.sock:/var/run/docker.sock cicddraft/jenkins:v0.4`
-
 > **wait: 5s**
 
 浏览器中访问：http://localhost:8081 进入jenkins页面
+
+
+- 在jenkins容器中，安装jmeter 
+
+```bash
+###login jenkins container 
+docker exec -it tw-jenkins bash
+
+### install jmeter in container
+wget -P /opt http://mirrors.tuna.tsinghua.edu.cn/apache//jmeter/binaries/apache-jmeter-5.1.1.tgz
+cd /opt && tar -xf /opt/apache-jmeter-5.1.1.tgz
+```
+
+测试jmeter 是否安装成功
+
+`/opt/apache-jmeter-5.1.1/bin/jmeter.sh  -h`
 
 ### 3.安装 sonarqube
 
@@ -95,7 +110,7 @@ http://localhost:8888/api/increase?number=329
 
 
 清理环境：
-`docker stop  api-container  tw-jcasc tw-sonarqube && docker rm api-container tw-jcasc tw-sonarqube`
+`docker stop  api-container  tw-jenkins tw-sonarqube && docker rm api-container tw-jenkins tw-sonarqube`
 
 ---
 what's more:
