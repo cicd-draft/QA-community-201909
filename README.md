@@ -106,7 +106,7 @@ springBoot 代码仓库:
 
 
 访问部署好的服务：
-http://localhost:8888/api/increase?number=329
+http://localhost:8080/api/increase?number=329
 
 
 清理环境：
