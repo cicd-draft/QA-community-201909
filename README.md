@@ -110,11 +110,32 @@ springBoot 代码仓库:
 http://localhost:8080/api/increase?number=329
 
 
-清理环境：
+### 5.清理环境
+
 `docker stop  api-container  tw-jenkins tw-sonarqube && docker rm api-container tw-jenkins tw-sonarqube`
 
----
-what's more:
-- https://github.com/qinrui777/sonarqube-metric-to-grafana
+
+### 6. 其他
+
+#### 6.1 docker 常用命令
+```bash
+docker --version 
+
+### 容器操作
+docker ps    # 查看当前正在运行的容器
+docker ps -a #查看所有镜像实例
+docker run hello-world #验证docker是否在运行中
+docker exec -it <Container_Name> bash  #进入容器
+docker stop <Container_Name>
+docker rm  <Container_Name>
+docker restart  <Container_Name>
+### 镜像操作
+docker build -t <image-name> . #使用当前目录下的Dockerfile构建镜像
+docker images    #查看镜像
+```
+
+####  6.2 可视化
+- [jenkins自身指标的可视化](https://github.com/cicd-draft/Jenkins-prometheus)
+- [sonarqube 指标的可视化](https://github.com/qinrui777/sonarqube-metric-to-grafana)
 
 <img src="images/sonar_to_grafana.png" width="380" height="220" >      <img src="images/jenkins_to_grafana.png" width="380" height="220" >
