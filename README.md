@@ -60,6 +60,7 @@ docker exec -it tw-jenkins bash
 ### install jmeter in container
 wget -P /opt http://mirrors.tuna.tsinghua.edu.cn/apache//jmeter/binaries/apache-jmeter-5.1.1.tgz
 cd /opt && tar -xf /opt/apache-jmeter-5.1.1.tgz
+
 ```
 
 测试jmeter 是否安装成功
