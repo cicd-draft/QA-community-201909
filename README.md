@@ -24,6 +24,10 @@ For thoughtworks(wuhan) QA-community-201909
 ```bash
 docker pull sonarqube:7.8-community
 docker pull cicddraft/jenkins:v0.4
+
+
+#aliyun  镜像仓库
+docker pull registry.cn-hangzhou.aliyuncs.com/cicddraft/jenkins:v0.4
 ```
 
 如有网络原因，可采取导入本地镜像包
