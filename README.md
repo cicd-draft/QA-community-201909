@@ -116,8 +116,18 @@ http://localhost:8080/api/increase?number=329
 
 
 ### 6. 其他
+#### 6.1 git 常用命令
 
-#### 6.1 docker 常用命令
+```bash
+git clone REPO_URL #下载代码
+git pull           #更新代码
+git add  .          # 添加指定文件到暂存区
+git commit -m "comment,your message"  #提交暂存区到仓库区
+git push           #push代码
+```
+
+#### 6.2 docker 常用命令
+
 ```bash
 docker --version 
 
@@ -134,7 +144,7 @@ docker build -t <image-name> . #使用当前目录下的Dockerfile构建镜像
 docker images    #查看镜像
 ```
 
-####  6.2 可视化
+####  6.3 可视化
 - [jenkins自身指标的可视化](https://github.com/cicd-draft/Jenkins-prometheus)
 - [sonarqube 指标的可视化](https://github.com/qinrui777/sonarqube-metric-to-grafana)
 
