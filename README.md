@@ -26,8 +26,9 @@ docker pull sonarqube:7.8-community
 docker pull cicddraft/jenkins:v0.4
 
 
-#aliyun  镜像仓库
+##或者使用 aliyun 镜像仓库
 docker pull registry.cn-hangzhou.aliyuncs.com/cicddraft/jenkins:v0.4
+docker pull registry.cn-hangzhou.aliyuncs.com/cicddraft/sonarqube:7.8-community
 ```
 
 如有网络原因，可采取导入本地镜像包
@@ -42,13 +43,11 @@ docker images
 
 `docker run --name tw-jenkins -d  -p 8081:8080  -v /var/run/docker.sock:/var/run/docker.sock cicddraft/jenkins:v0.4`
 
->or 
-```bash
-docker run --name tw-jenkins -d    \
--p 8081:8080   \
--v /var/run/docker.sock:/var/run/docker.sock \
-cicddraft/jenkins:v0.4
-```
+
+or aliyun repo 
+
+`docker run -d --name tw-jenkins -d -p 8081:8080  -v /var/run/docker.sock:/var/run/docker.sock  registry.cn-hangzhou.aliyuncs.com/cicddraft/jenkins:v0.4`
+
 
 > **wait: 5s**
 
@@ -78,6 +77,11 @@ cd /opt && tar -xf /opt/apache-jmeter-5.1.1.tgz
 启动sonarqube:
 
 `docker run -d --name tw-sonarqube -p 9000:9000 sonarqube:7.8-community`
+
+or aliyun repo 
+
+`docker run -d --name tw-sonarqube -p 9000:9000 registry.cn-hangzhou.aliyuncs.com/cicddraft/sonarqube:7.8-community`
+
 
 > **wait 5s**
 
