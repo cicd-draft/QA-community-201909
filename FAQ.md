@@ -1,4 +1,4 @@
-### **Q1: windows docker 启动后本地无法访问 localhost:端口 **
+### **Q1: windows docker 启动后本地无法访问 localhost:端口**
 A: 
   If you’re using Docker Toolbox then any port you publish with docker run -p will be published on the Toolbox VM’s private IP address. docker-machine ip will tell you. It is frequently 192.168.99.100.
   
@@ -10,7 +10,14 @@ A:
   
 ### **Q2: 国内拉取 docker 镜像慢**
   
-  参考：
+换国内镜像仓库地址 (启动容器时也需要使用对应的镜像名称)
+```bash
+##使用 aliyun 镜像仓库
+docker pull registry.cn-hangzhou.aliyuncs.com/cicddraft/jenkins:v0.4
+docker pull registry.cn-hangzhou.aliyuncs.com/cicddraft/sonarqube:7.8-community
+```
+  
+参考：
   - https://blog.csdn.net/IT_xiao_bai/article/details/83070070
   - http://frankchen.xyz/2017/02/17/Docker-Windows-Speed-up/
 
