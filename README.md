@@ -106,7 +106,7 @@ springBoot 代码仓库:
 
 |    key | value   | 
 |--------|-----------    | 
-|Repository URL | `https://github.com/lewisice/api-test-demo` | 
+|Repository URL | `https://github.com/cicd-draft/api-test-demo` | 
 |Branch Specifier | `*/cicd` | 
 
 6. 点击 **"Save"** 保存
